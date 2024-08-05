@@ -1,2 +1,3 @@
 # ProblemsToSolve
-JS exercises to practice
+
+JS exercises for practice
