@@ -52,4 +52,47 @@ function reversedArr(rra) {
 
 // 6
 
-function lowToHigh() {}
+// function lowToHigh() {}
+
+// function yourFutureCareer() {
+//   const career = Math.random();
+//   if (career <= 0.32) {
+//     return 'FrontEnd Developer';
+//   } else if (career <= 0.65) {
+//     return 'BackEnd Developer';
+//   } else {
+//     return 'Full-Stack Developer';
+//   }
+// }
+
+// console.log(yourFutureCareer());
+
+// const yourFutureCareer = () => {
+//   const choices = [
+//     'FrontEnd Developer',
+//     'BackEnd Developer',
+//     'Full-Stack Developer',
+//   ];
+//   return choices[Math.floor(Math.random() * choices.length)];
+// };
+
+// console.log(yourFutureCareer());
+
+function Dog(breed) {
+  this.breed = breed;
+}
+
+const snoopy = new Dog('Beagle');
+
+snoopy.bark = function () {
+  return 'Woof';
+};
+
+const scoobydoo = new Dog('Great Dane');
+
+scoobydoo.bark = function () {
+  return 'Woof';
+};
+
+console.log(scoobydoo.bark());
+console.log(snoopy.bark());
