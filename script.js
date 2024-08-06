@@ -78,21 +78,56 @@ function reversedArr(rra) {
 
 // console.log(yourFutureCareer());
 
-function Dog(breed) {
-  this.breed = breed;
-}
+// function Dog(breed) {
+//   this.breed = breed;
+// }
 
-const snoopy = new Dog('Beagle');
+// const snoopy = new Dog('Beagle');
 
-snoopy.bark = function () {
-  return 'Woof';
+// snoopy.bark = function () {
+//   return 'Woof';
+// };
+
+// const scoobydoo = new Dog('Great Dane');
+
+// scoobydoo.bark = function () {
+//   return 'Woof';
+// };
+
+// console.log(scoobydoo.bark());
+// console.log(snoopy.bark());
+
+// const sum = (nums) => {
+//   if (nums.length === 0) return 0;
+//   const answer = nums.reduce((prev, curr) => prev + curr);
+//   return answer;
+// };
+
+// console.log(sum([]));
+
+// describe('sum', () => {
+//   test('computes the sum of an empty array', () => {
+//     expect(calculator.sum([])).toBe(0);
+//   });
+
+//   test('computes the sum of an array of one number', () => {
+//     expect(calculator.sum([7])).toBe(7);
+//   });
+
+//   test('computes the sum of an array of two numbers', () => {
+//     expect(calculator.sum([7, 11])).toBe(18);
+//   });
+
+//   test('computes the sum of an array of many numbers', () => {
+//     expect(calculator.sum([1, 3, 5, 7, 9])).toBe(25);
+//   });
+// });
+
+const palindromes = (words) => {
+  const reverWords = [...words].toReversed('').join('');
+  return reverWords === words;
 };
 
-const scoobydoo = new Dog('Great Dane');
-
-scoobydoo.bark = function () {
-  return 'Woof';
-};
-
-console.log(scoobydoo.bark());
-console.log(snoopy.bark());
+palindromes('racecar');
+palindromes('tacos');
+//npm test palindromes.spec.js
