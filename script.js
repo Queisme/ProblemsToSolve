@@ -123,11 +123,62 @@ function reversedArr(rra) {
 //   });
 // });
 
-const palindromes = (words) => {
-  const reverWords = [...words].toReversed('').join('');
-  return reverWords === words;
+// const palindromes = (words) => {
+//   const reverWords = [...words].toReversed('').join('');
+//   return reverWords === words;
+// };
+
+// palindromes('racecar');
+// palindromes('tacos');
+// //npm test palindromes.spec.js
+
+// const fibonacci = function fib(n) {
+//   if (n < 0) return 'OOPS';
+//   if (n === '0') return 0;
+//   let a = 0,
+//     b = 1,
+//     c,
+//     i;
+//   if (n === 0) return a;
+//   for (i = 2; i <= n; i++) {
+//     c = a + b;
+//     a = b;
+//     b = c;
+//   }
+//   return b;
+// };
+
+// console.log(fibonacci('0'));
+
+const books = [
+  {
+    title: 'Book',
+    author: 'Name',
+  },
+  {
+    title: 'Book2',
+    author: 'Name2',
+  },
+  {
+    title: 'Book3',
+    author: 'Name3',
+  },
+  {
+    title: 'Book4',
+    author: 'Name4',
+  },
+  {
+    title: 'Book5',
+    author: 'Name5',
+  },
+  {
+    title: 'Book6',
+    author: 'Name6',
+  },
+];
+
+const getTitles = function (books) {
+  return arr.map(() => book.title);
 };
 
-palindromes('racecar');
-palindromes('tacos');
-//npm test palindromes.spec.js
+getTitles;
